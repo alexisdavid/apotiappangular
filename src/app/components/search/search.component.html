@@ -1,3 +1,20 @@
-<p>
-  search works!
-</p>
+<div class="row">
+
+    <div class="col">
+
+        <!-- enviamos en value  a la funcion search del componente -->
+        <input type="text" #termino (keyup)="search(termino.value) " class="form-control" placeholder="buscar artista...">
+    </div>
+
+</div>
+
+<!-- imprimimos las tarjetas con los resultados -->
+<div class="card-columns m-5">
+
+    <div *ngFor="let cantante of artist" class="card">
+        <img class="card-img-top" [src]="cantante.images[0].url" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">{{cantante.name}}</h5>
+
+        </div>
+    </div>

@@ -1,5 +1,9 @@
 <div class="card-columns">
 
+    <!-- 
+    tan pronte y se cargue el home llamamos al servicio para cargar 
+    los nuevos lanzamientos -->
+
     <div *ngFor="let songs of newReleases" class="card">
         <img class="card-img-top" [src]="songs.images[0].url" alt="Card image cap">
         <div class="card-body">

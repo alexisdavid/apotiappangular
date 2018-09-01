@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+
+// cargamos el servicio para usarlo
 import { SpotifyService } from '../../services/spotify-service.service';
 
 @Component({
@@ -9,12 +11,18 @@ import { SpotifyService } from '../../services/spotify-service.service';
 export class HomeComponent implements OnInit {
 
   newReleases:any[] =[];
-
+            // iniciamos la variable del servicio
+                        // |
+                        // V
   constructor( private service: SpotifyService) { 
 
-    this.service.getNewReleases().subscribe( (releases:any) =>{
-        console.log(releases.albums.items);
-        this.newReleases=releases.albums.items;
+
+  // llamamos la funcion get del servicio (getNewreleases)
+
+
+    this.service.getNewReleases().subscribe( (data:any) =>{
+        console.log(data.albums.items);
+        this.newReleases=data.albums.items;
                      
     });
   }
