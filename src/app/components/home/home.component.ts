@@ -21,8 +21,8 @@ export class HomeComponent implements OnInit {
 
 
     this.service.getNewReleases().subscribe( (data:any) =>{
-        console.log(data.albums.items);
-        this.newReleases=data.albums.items;
+        console.log(data);
+        this.newReleases=data;
                      
     });
   }

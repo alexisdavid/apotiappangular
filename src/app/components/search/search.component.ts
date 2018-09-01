@@ -20,7 +20,7 @@ export class SearchComponent  {
       .subscribe((data:any) => {
         console.log(data);
         
-        this.artist=data.artists.items
+        this.artist=data
       })
  }
 }
