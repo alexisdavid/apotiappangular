@@ -17,7 +17,7 @@ export class SpotifyService {
     
   }
 
-  // centralizacion de la url y los headers
+  // centralizacion de la url y los headersmap
   getQuery(query:string){
 
     const url = `https://api.spotify.com/v1/${query}`;
@@ -25,7 +25,7 @@ export class SpotifyService {
     // heders de la peticion al api de spotify
     const headers = new HttpHeaders({
         
-      'Authorization':'Bearer BQCPbabiT7TVse9r0mpBe06uk1_01aP-FkxdwIF7n7z7WfYfE2JtcAyes1w0mcAHPpDflO03qv_Ovi2mXzE'
+      'Authorization':'Bearer BQCS8O6V41Vkzjzhvwi0l1b-IdYT43EjSS92EI2xXGoYWTmMRrtQWiIKLPbd3J1JDGYjYStJLL1aXaptUxA'
   
     });
 
@@ -37,7 +37,7 @@ export class SpotifyService {
   // funcion cargada en el home 
  getNewReleases(){
 
-     return this.getQuery('browse/new-releases?limit=15').pipe(map(data => data['albums'].items));
+     return this.getQuery('browse/new-releases?limit=20').pipe(map(data => data['albums'].items));
                
   };
 

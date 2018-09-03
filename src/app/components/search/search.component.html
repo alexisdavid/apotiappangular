@@ -12,7 +12,7 @@
 <div class="card-columns m-5">
 
     <div *ngFor="let cantante of artist" class="card">
-        <img class="card-img-top" [src]="cantante.images[0].url" alt="Card image cap">
+        <img class="card-img-top" [src]="cantante.images| noImage " alt="Card image cap">
         <div class="card-body">
             <h5 class="card-title">{{cantante.name}}</h5>
 

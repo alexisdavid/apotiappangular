@@ -5,7 +5,7 @@
     los nuevos lanzamientos -->
 
     <div *ngFor="let songs of newReleases" class="card">
-        <img class="card-img-top" [src]="songs.images[0].url" alt="Card image cap">
+        <img class="card-img-top" [src]="songs.images | noImage" alt="Card image cap">
         <div class="card-body">
             <h5 class="card-title">{{songs.name}}</h5>
             <p class="card-text">

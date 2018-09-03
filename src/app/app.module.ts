@@ -16,6 +16,10 @@ import { ArtistaComponent } from './components/artista/artista.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
 import { HttpClient } from 'selenium-webdriver/http';
 
+// pipes
+
+import { NoImagePipe } from './pipes/no-image.pipe';
+
 
 
 @NgModule({
@@ -25,7 +29,8 @@ import { HttpClient } from 'selenium-webdriver/http';
     HomeComponent,
     SearchComponent,
     ArtistaComponent,
-    FooterComponent
+    FooterComponent,
+    NoImagePipe
   ],
   imports: [
     BrowserModule,
