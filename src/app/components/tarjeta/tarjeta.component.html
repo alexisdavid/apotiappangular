@@ -1,0 +1,16 @@
+<div class="card-columns m-5">
+
+    <!-- 
+  tan pronte y se cargue el home llamamos al servicio para cargar 
+  los nuevos lanzamientos -->
+
+    <div *ngFor="let songs of items" class="card">
+        <img class="card-img-top" [src]="songs.images | noImage" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">{{songs.name}}</h5>
+            <p class="card-text">
+                <span *ngFor="let artist of songs.artists" class="badge badge-primary">{{ artist.name }}</span>
+            </p>
+        </div>
+    </div>
+</div>

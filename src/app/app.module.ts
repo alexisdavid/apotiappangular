@@ -19,6 +19,7 @@ import { HttpClient } from 'selenium-webdriver/http';
 // pipes
 
 import { NoImagePipe } from './pipes/no-image.pipe';
+import { TarjetaComponent } from './components/tarjeta/tarjeta.component';
 
 
 
@@ -30,7 +31,8 @@ import { NoImagePipe } from './pipes/no-image.pipe';
     SearchComponent,
     ArtistaComponent,
     FooterComponent,
-    NoImagePipe
+    NoImagePipe,
+    TarjetaComponent
   ],
   imports: [
     BrowserModule,

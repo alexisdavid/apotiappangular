@@ -25,7 +25,7 @@ export class SpotifyService {
     // heders de la peticion al api de spotify
     const headers = new HttpHeaders({
         
-      'Authorization':'Bearer BQCS8O6V41Vkzjzhvwi0l1b-IdYT43EjSS92EI2xXGoYWTmMRrtQWiIKLPbd3J1JDGYjYStJLL1aXaptUxA'
+      'Authorization':'Bearer BQDLZWICrWeId3UBffRlaPZqdm89Nxp-zTNfx7aHLBxjctKVVbmNwjRmFMXTOidFBMdliBKk6jxGyGw28Yk'
   
     });
 
