@@ -8,5 +8,8 @@
 
 </div>
 
+<app-loading *ngIf="cargado"></app-loading>
+
+
 <!-- reutilizamos el componente terjeta -->
-<app-tarjeta [items]="artist"></app-tarjeta>
+<app-tarjeta *ngIf="!cargado" [items]="artist"></app-tarjeta>

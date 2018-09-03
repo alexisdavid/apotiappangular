@@ -10,12 +10,13 @@ import { SpotifyService } from '../../services/spotify-service.service';
 })
 export class HomeComponent implements OnInit {
 
+  cargado:boolean = true;
+
   newReleases:any[] =[];
             // iniciamos la variable del servicio
                         // |
                         // V
   constructor( private service: SpotifyService) { 
-
 
   // llamamos la funcion get del servicio (getNewreleases)
 
@@ -23,6 +24,7 @@ export class HomeComponent implements OnInit {
     this.service.getNewReleases().subscribe( (data:any) =>{
         console.log(data);
         this.newReleases=data;
+        this.cargado=false;
                      
     });
   }

@@ -20,6 +20,7 @@ import { HttpClient } from 'selenium-webdriver/http';
 
 import { NoImagePipe } from './pipes/no-image.pipe';
 import { TarjetaComponent } from './components/tarjeta/tarjeta.component';
+import { LoadingComponent } from './components/shared/loading/loading.component';
 
 
 
@@ -32,7 +33,8 @@ import { TarjetaComponent } from './components/tarjeta/tarjeta.component';
     ArtistaComponent,
     FooterComponent,
     NoImagePipe,
-    TarjetaComponent
+    TarjetaComponent,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,

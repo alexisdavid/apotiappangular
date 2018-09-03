@@ -1,10 +1,10 @@
-<div class="card-columns m-5">
+<div class="card-columns m-5 animated fadeIn">
 
     <!-- 
   tan pronte y se cargue el home llamamos al servicio para cargar 
   los nuevos lanzamientos -->
 
-    <div *ngFor="let songs of items" class="card">
+    <div (click)="verArtista(songs)" *ngFor="let songs of items" class="card puntero">
         <img class="card-img-top" [src]="songs.images | noImage" alt="Card image cap">
         <div class="card-body">
             <h5 class="card-title">{{songs.name}}</h5>
