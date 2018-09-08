@@ -11,8 +11,12 @@ import { SpotifyService } from '../../services/spotify-service.service';
 export class SearchComponent  {
  cargado:boolean;
  artist: any[]= [];
-  constructor(private spotify:SpotifyService) { }
-
+ error:boolean;
+ 
+  constructor(private spotify:SpotifyService) { 
+    
+  }
+  
 
   // recibimos el termino de busqueda en la funcion
  search(termino: string){

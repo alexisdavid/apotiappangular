@@ -39,7 +39,9 @@
                     </th>
                     <td>{{ track.album.name }}</td>
                     <td>{{track.name}}</td>
-                    <td>@mdo</td>
+                    <td>
+                        <iframe [src]="track.uri | domSeguro " width="300" height="80"></iframe>
+                    </td>
                 </tr>
 
             </tbody>

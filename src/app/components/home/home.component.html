@@ -1,4 +1,7 @@
 <app-loading *ngIf="cargado"> </app-loading>
 <!-- todo el html esta en el componente tarjetas -->
-
+<div *ngIf="error" class="alert alert-danger text-center">
+    <h3>Error <i class="fas fa-exclamation-triangle"></i></h3>
+    <p>{{messageError}}</p>
+</div>
 <app-tarjeta [items]="newReleases"></app-tarjeta>

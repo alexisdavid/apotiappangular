@@ -21,6 +21,7 @@ import { HttpClient } from 'selenium-webdriver/http';
 import { NoImagePipe } from './pipes/no-image.pipe';
 import { TarjetaComponent } from './components/tarjeta/tarjeta.component';
 import { LoadingComponent } from './components/shared/loading/loading.component';
+import { DomSeguroPipe } from './pipes/dom-seguro.pipe';
 
 
 
@@ -34,7 +35,8 @@ import { LoadingComponent } from './components/shared/loading/loading.component'
     FooterComponent,
     NoImagePipe,
     TarjetaComponent,
-    LoadingComponent
+    LoadingComponent,
+    DomSeguroPipe
   ],
   imports: [
     BrowserModule,
